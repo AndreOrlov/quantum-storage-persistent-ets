@@ -75,7 +75,8 @@ defmodule QuantumStoragePersistentEts.MixProject do
   defp deps do
     [
       {:persistent_ets, "~> 0.2"},
-      {:quantum, "~> 3.0"},
+      # {:quantum, "~> 3.0"},
+      {:quantum, "~> 2.3", git: "git@bitbucket.org:verifio/quantum.git", branch: "master"},
       {:ex_doc, "~> 0.13", only: [:dev, :docs], runtime: false},
       {:excoveralls, "~> 0.13", only: [:dev, :test], runtime: false},
       {:dialyxir, "~> 1.0", only: [:dev, :test], runtime: false},
